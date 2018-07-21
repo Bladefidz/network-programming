@@ -6,6 +6,7 @@ class Echo(protocol.Protocol):
     The Twisted protocol handling data asynchronously"""
     def dataReceived(self, data):
         """Write event data when it arrived, but not send response"""
+        print("Send back the data from client")
         self.transport.write(data)
 
 class EchoFactory(protocol.Factory):

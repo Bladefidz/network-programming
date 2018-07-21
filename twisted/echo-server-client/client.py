@@ -5,6 +5,7 @@ class EchoClient(protocol.Protocol):
         """The EchoClient protocol will send the data to the
         server, sends it 'Hello, world!', and then terminate
         the connection"""
+        print("Send \'Hello, world!\' to the server.")
         self.transport.write("Hello, world!".encode('utf-8'))
     
     def dataReceived(self, data):
