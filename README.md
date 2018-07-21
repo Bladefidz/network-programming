@@ -1,2 +1,3 @@
-# client-server
-Sample of client-server applications
+# Network Programming
+
+A collection of network programming samples.
